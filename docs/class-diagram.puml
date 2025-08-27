@@ -1,0 +1,21 @@
+@startuml
+abstract class Resource {
+-name: std::string
+-isAvailable: bool
+-resourceType: Type
++getName(): std::string
++getResourceType(): Type
++isAvailableForUse(): bool <<abstract>>
++allocate() <<abstract>>
++release() <<abstract>>
++use(): void <<abstract>>
+}
+
+enum Type {
+Consumable
+Usable
+}
+
+Resource o--> "1" Type : uses
+
+@enduml

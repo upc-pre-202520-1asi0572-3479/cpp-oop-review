@@ -28,7 +28,7 @@ public:
      * @param requiredResourceNames Names of resources required by the executable.
      * @param durationInUnits Duration of the executable in time units.
      */
-    Executable(const std::string &name, const std::string &description,
+    Executable(const std::string &name, const std::string description,
         const std::vector<std::string> &requiredResourceNames, int durationInUnits);
 
     /**
@@ -40,7 +40,7 @@ public:
      * @brief Retrieves the name of the executable.
      * @return The name of the executable.
      */
-    [[nodiscard]] const std::string getName() const;
+    [[nodiscard]] std::string getName() const;
 
     /**
      * @brief Retrieves the description of the executable.

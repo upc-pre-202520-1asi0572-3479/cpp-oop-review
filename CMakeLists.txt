@@ -30,6 +30,7 @@ set(SOURCES
         src/UsableResource.cpp
         src/ConsumableResource.cpp
         src/Executable.cpp
-        src/Task.cpp)
+        src/Task.cpp
+        src/Process.cpp)
 # Define the executable target
 add_executable(cpp_oop_review ${SOURCES})
